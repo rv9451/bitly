@@ -26,6 +26,8 @@ export const redirectToOriginalUrl = async (req, res) =>{
         if(!urlRecord){
             return res.status(404).json({error: "URL not found"});
         }
+        urlRecord.click += 1;
+        await urlRecord.save();
         return res.redirect(urlRecord.originalUrl);
     } catch (error) {
          console.log(err);
