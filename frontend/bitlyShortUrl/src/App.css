@@ -1,0 +1,18 @@
+.bgcoloer{
+  background-color: #031f39;
+}
+.login-btn {
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.navtext:hover {
+  color: #ffc107;
+  transition: 0.3s;
+}
